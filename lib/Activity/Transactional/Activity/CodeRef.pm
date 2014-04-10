@@ -1,5 +1,7 @@
 package Activity::Transactional::Activity::CodeRef;
 $Activity::Transactional::Activity::CodeRef::VERSION = '0.001000';
+our $AUTHORITY = 'cpan:ELPENGUIN'; # AUTHORITY
+
 use Moose;
 
 with 'Activity::Transactional::Activity';

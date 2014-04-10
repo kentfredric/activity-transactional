@@ -1,5 +1,7 @@
 package Activity::Transactional::Transaction;
 $Activity::Transactional::Transaction::VERSION = '0.001000';
+our $AUTHORITY = 'cpan:ELPENGUIN'; # AUTHORITY
+
 use Moose;
 use Activity::Transactional::Activity;
 use Activity::Transactional::Iterator;

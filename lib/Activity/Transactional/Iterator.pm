@@ -1,5 +1,7 @@
 package Activity::Transactional::Iterator;
 $Activity::Transactional::Iterator::VERSION = '0.001000';
+our $AUTHORITY = 'cpan:ELPENGUIN'; # AUTHORITY
+
 use Moose;
 
 has source => (

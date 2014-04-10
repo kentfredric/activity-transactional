@@ -1,5 +1,7 @@
 package Activity::Transactional::Activity;
 $Activity::Transactional::Activity::VERSION = '0.001000';
+our $AUTHORITY = 'cpan:ELPENGUIN'; # AUTHORITY
+
 use Moose::Role;
 use strict;
 use warnings;
