@@ -1,8 +1,25 @@
 package Activity::Transactional::Iterator;
 $Activity::Transactional::Iterator::VERSION = '0.001000';
+# ABSTRACT: A reversable iterator for an ArrayRef
+
 our $AUTHORITY = 'cpan:ELPENGUIN'; # AUTHORITY
 
+
+
+
+
+
+
+
+
+
+
+
 use Moose;
+
+
+
+
 
 has source => (
   isa      => 'ArrayRef[Any]',
@@ -15,6 +32,10 @@ has source => (
     'can_last'  => 'count',
   },
 );
+
+
+
+
 
 has index => (
   isa      => 'Num',
@@ -29,16 +50,28 @@ has index => (
   },
 );
 
+
+
+
+
 sub can_next {
   my $self  = shift;
   my $count = $self->count - 1;
   return ( $self->count - 1 <= $self->index );
 }
 
+
+
+
+
 sub can_prev {
   my $self = shift;
   return ( $self->index > 0 );
 }
+
+
+
+
 
 sub next {
   my $self = shift;
@@ -47,6 +80,10 @@ sub next {
   $self->get;
 }
 
+
+
+
+
 sub prev {
   my $self = shift;
   die("nomore") unless $self->can_prev;
@@ -54,11 +91,19 @@ sub prev {
   $self->get;
 }
 
+
+
+
+
 sub first {
   my $self = shift;
   die("empty") unless $self->can_first;
   $self->set_index(0);
 }
+
+
+
+
 
 sub last_index {
   my $self = shift;
@@ -66,20 +111,36 @@ sub last_index {
   return $self->count - 1;
 }
 
+
+
+
+
 sub last {
   my $self = shift;
   $self->set_index( $self->last_index );
 }
 
+
+
+
+
 sub can_current {
   shift->index != -1;
 }
+
+
+
+
 
 sub get {
   my $self = shift;
   die("empty") unless $self->can_current;
   $self->source->[ $self->index ];
 }
+
+
+
+
 
 sub set {
   my ( $self, $value ) = @_;
@@ -99,11 +160,48 @@ __END__
 
 =head1 NAME
 
-Activity::Transactional::Iterator
+Activity::Transactional::Iterator - A reversable iterator for an ArrayRef
 
 =head1 VERSION
 
 version 0.001000
+
+=head1 SYNOPSIS
+
+  my $iterator => Activity::Transactional::Iterator->new(
+     source => \@someArray
+  );
+  while ( $iterator->can_next ) {
+      my $item = $iterator->next;
+  }
+
+=head1 METHODS
+
+=head2 C<can_next>
+
+=head2 C<can_prev>
+
+=head2 C<next>
+
+=head2 C<prev>
+
+=head2 C<first>
+
+=head2 C<last_index>
+
+=head2 C<last>
+
+=head2 C<can_current>
+
+=head2 C<get>
+
+=head2 C<set>
+
+=head1 ATTRIBUTES
+
+=head2 C<source>
+
+=head2 C<index>
 
 =head1 AUTHORS
 
