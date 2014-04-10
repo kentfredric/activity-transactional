@@ -15,6 +15,9 @@ lib/Activity/Transactional/Activity/CodeRef.pm
 lib/Activity/Transactional/Iterator.pm
 lib/Activity/Transactional/Transaction.pm
 lib/Activity/Transactional/Types.pm
+maint/perlcritic.rc.gen.pl
+perlcritic.deps
+perlcritic.rc
 t/00-compile/lib_Activity_Transactional_Activity_CodeRef_pm.t
 t/00-compile/lib_Activity_Transactional_Activity_pm.t
 t/00-compile/lib_Activity_Transactional_Iterator_pm.t
