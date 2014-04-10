@@ -1,6 +1,15 @@
 package Activity::Transactional::Transaction;
 
+# ABSTRACT: An atomic transaction
+
 # AUTHORITY
+
+=head1 SYNOPSIS
+
+  my $transaction = thing_that_yields_a_transaction();
+  $transaction->commit();
+
+=cut
 
 use Moose;
 use Activity::Transactional::Activity;
@@ -27,6 +36,10 @@ sub _iterator {
   Activity::Transactional::Iterator( source => $self->_actions );
 }
 
+=method C<commit>
+
+=cut
+
 sub commit {
   my $self = shift;
   my $it   = $self->_iterator;
@@ -42,6 +55,10 @@ sub commit {
   1;
 }
 
+=method C<do_rollback>
+
+=cut
+
 sub do_rollback {
   my ( $self, $it ) = @_;
   while ( $it->can_prev ) {
@@ -55,12 +72,20 @@ sub do_rollback {
   }
 }
 
+=method C<rollback>
+
+=cut
+
 sub rollback {
   my $self = shift;
   my $it   = $self->_iterator;
   $it->end;
   $self->do_rollback($it);
 }
+
+=method C<add_activity>
+
+=cut
 
 sub add_activity {
   my ( $self, $activity ) = @_;
