@@ -94,7 +94,7 @@ allow_includes = 1
 
 [Compatibility::Gtk2Constants]
 
-[Compatibility::PerlMinimumVersionAndWhy]
+[-Compatibility::PerlMinimumVersionAndWhy]
 
 [-Compatibility::PodMinimumVersion]
 
@@ -305,7 +305,7 @@ allowed_pragmata = diagnostics feature perlversion strict warnings utf8
 
 [Subroutines::ProhibitBuiltinHomonyms]
 
-[Subroutines::ProhibitCallsToUndeclaredSubs]
+[-Subroutines::ProhibitCallsToUndeclaredSubs]
 
 [Subroutines::ProhibitCallsToUnexportedSubs]
 
@@ -342,11 +342,9 @@ private_name_regex = _(?!build_)\w
 
 [TestingAndDebugging::RequireTestLabels]
 
-[TestingAndDebugging::RequireUseStrict]
-equivalent_modules = Moose Moo
+[-TestingAndDebugging::RequireUseStrict]
 
-[TestingAndDebugging::RequireUseWarnings]
-equivalent_modules = Moose Moo
+[-TestingAndDebugging::RequireUseWarnings]
 
 [Tics::ProhibitLongLines]
 base_max = 130
