@@ -10,7 +10,7 @@ use ExtUtils::MakeMaker 6.30;
 
 
 my %WriteMakefileArgs = (
-  "ABSTRACT" => "A Transaction-Oriented Programming Workflow Toolkit",
+  "ABSTRACT" => "A Transaction-Oriented Programming work-flow toolkit",
   "AUTHOR" => "James Laver <james.laver\@gmail.com>, Kent Fredric <kentnl\@cpan.org>",
   "BUILD_REQUIRES" => {},
   "CONFIGURE_REQUIRES" => {

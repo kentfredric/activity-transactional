@@ -3,7 +3,7 @@ $Activity::Transactional::VERSION = '0.001000';
 use strict;
 use warnings;
 
-# ABSTRACT: A Transaction-Oriented Programming Workflow Toolkit
+# ABSTRACT: A Transaction-Oriented Programming work-flow toolkit
 
 our $AUTHORITY = 'cpan:ELPENGUIN'; # AUTHORITY
 
@@ -23,7 +23,7 @@ __END__
 
 =head1 NAME
 
-Activity::Transactional - A Transaction-Oriented Programming Workflow Toolkit
+Activity::Transactional - A Transaction-Oriented Programming work-flow toolkit
 
 =head1 VERSION
 
