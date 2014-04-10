@@ -1,5 +1,7 @@
 package Activity::Transactional::Transaction;
 
+# AUTHORITY
+
 use Moose;
 use Activity::Transactional::Activity;
 use Activity::Transactional::Iterator;

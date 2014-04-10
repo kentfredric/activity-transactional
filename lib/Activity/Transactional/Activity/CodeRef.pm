@@ -1,5 +1,7 @@
 package Activity::Transactional::Activity::CodeRef;
 
+# AUTHORITY
+
 use Moose;
 
 with 'Activity::Transactional::Activity';

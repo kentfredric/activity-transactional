@@ -1,5 +1,7 @@
 package Activity::Transactional::Iterator;
 
+# AUTHORITY
+
 use Moose;
 
 has source => (
