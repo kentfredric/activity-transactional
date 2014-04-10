@@ -20,7 +20,7 @@ has _actions => (
     '_push' => 'push',
     '_pop' => 'pop',
   },
-}
+);
 
 sub _iterator {
   Activity::Transactional::Iterator(source => $self->_actions);
