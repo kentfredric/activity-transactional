@@ -37,6 +37,8 @@ $bundle->remove_policy('ErrorHandling::RequireCarping');
 $bundle->remove_policy('CodeLayout::ProhibitParensWithBuiltins');
 $bundle->remove_policy('ValuesAndExpressions::ProhibitInterpolationOfLiterals');
 $bundle->remove_policy('Subroutines::ProhibitBuiltinHomonyms');
+$bundle->remove_policy('ErrorHandling::RequireUseOfExceptions');
+$bundle->remove_policy('Variables::ProhibitUnusedVarsStricter');
 
 #$bundle->remove_policy('NamingConventions::Capitalization');
 
