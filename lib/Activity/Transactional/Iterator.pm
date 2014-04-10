@@ -10,7 +10,7 @@ has source => (
   handles => {
     'count' => 'count',
     'can_first' => 'count',
-    'can_last' => 'count'k
+    'can_last' => 'count'
   }
 );
 
