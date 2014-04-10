@@ -23,9 +23,9 @@ sub commit {
   $self->commit_code->()
 }
 
-sub rollback_code {
-  my ( $self ) = @_;
-  $self->rollback_code->()
+sub rollback {
+  my ($self) = @_;
+  $self->rollback_code->();
 }
 
 __PACKAGE__->meta->make_immutable();
