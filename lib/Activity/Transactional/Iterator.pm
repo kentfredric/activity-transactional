@@ -11,8 +11,8 @@ has source => (
   traits => ['Array'],
   handles => {
     'count' => 'count',
-    'can_first' => 'count',
-    'can_last' => 'count',
+#    'can_first' => 'count',
+#    'can_last' => 'count',
   }
 );
 
