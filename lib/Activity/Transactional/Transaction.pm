@@ -8,7 +8,7 @@ package Activity::Transactional::Transaction;
 
 A transaction coordinates atomic activities and turns them into an atomic
 unit of execution. If any one of the activities fails, all applied activities are rolled back in reverse order.
- 
+
   use Activity::Transactional::Transaction;
   use Activity::Transactional::Activity::CodeRef;
   my $transaction = Activity::Transactional::Transaction->new;
