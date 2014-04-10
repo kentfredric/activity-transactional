@@ -2,6 +2,9 @@ package Activity::Transactional::Types;
 
 # AUTHORITY
 
+use strict;
+use warnings;
+
 use MooseX::Types -declare => [
   qw(Activity Transaction TransactionList)
 ];
