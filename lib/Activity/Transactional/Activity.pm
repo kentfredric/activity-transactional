@@ -26,6 +26,26 @@ Activity::Transactional::Activity - Base role for kinds of transactional activit
 
 version 0.001000
 
+=head1 SYNOPSIS
+
+  package My::Activity;
+  use Moose::Role;
+  with 'Activity::Transactional::Activity';
+  sub commit {
+    # Do something that should happen atomically
+  }
+  sub rollback {
+    # If anything fails during the commit, we should clean it up here
+  }
+
+=head1 WHY?
+
+It's a neat-ish way of dealing with things as part of a larger transaction.
+
+You can perform cleanup etc. in the case that things go wrong.
+
+=cut
+
 =head1 AUTHORS
 
 =over 4

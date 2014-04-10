@@ -158,9 +158,9 @@ The code is open to the world, and available for you to hack on. Please feel fre
 with it, or whatever. If you want to contribute patches, please send me a diff or prod me to pull
 from your repository :)
 
-L<https://github.com/kentfredric/activity-transactional>
+L<https://github.com/jjl/activity-transactional>
 
-  git clone https://github.com/kentfredric/activity-transactional.git
+  git clone https://github.com/jjl/activity-transactional.git
 
 =head1 COPYRIGHT AND LICENSE
 

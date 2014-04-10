@@ -48,9 +48,9 @@ requires:
   strict: '0'
   warnings: '0'
 resources:
-  bugtracker: https://github.com/kentfredric/activity-transactional/issues
-  homepage: https://github.com/kentfredric/activity-transactional
-  repository: https://github.com/kentfredric/activity-transactional.git
+  bugtracker: https://github.com/jjl/activity-transactional/issues
+  homepage: https://github.com/jjl/activity-transactional
+  repository: https://github.com/jjl/activity-transactional.git
 version: '0.001000'
 x_BuiltWith:
   modules:

@@ -136,13 +136,13 @@
    "release_status" : "stable",
    "resources" : {
       "bugtracker" : {
-         "web" : "https://github.com/kentfredric/activity-transactional/issues"
+         "web" : "https://github.com/jjl/activity-transactional/issues"
       },
-      "homepage" : "https://github.com/kentfredric/activity-transactional",
+      "homepage" : "https://github.com/jjl/activity-transactional",
       "repository" : {
          "type" : "git",
-         "url" : "https://github.com/kentfredric/activity-transactional.git",
-         "web" : "https://github.com/kentfredric/activity-transactional"
+         "url" : "https://github.com/jjl/activity-transactional.git",
+         "web" : "https://github.com/jjl/activity-transactional"
       }
    },
    "version" : "0.001000",

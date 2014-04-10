@@ -11,6 +11,19 @@ our $AUTHORITY = 'cpan:ELPENGUIN'; # AUTHORITY
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 use Moose;
 use Activity::Transactional::Activity;
 use Activity::Transactional::Iterator;
@@ -112,7 +125,20 @@ version 0.001000
 
 =head1 SYNOPSIS
 
-  my $transaction = thing_that_yields_a_transaction();
+A transaction coordinates atomic activities and turns them into an atomic
+unit of execution. If any one of the activities fails, all applied activities are rolled back in reverse order.
+
+  use Activity::Transactional::Transaction;
+  use Activity::Transactional::Activity::CodeRef;
+  my $transaction = Activity::Transactional::Transaction->new;
+  my $a1 = Activity::Transactional::Activity::CodeRef->new(
+    commit => sub {...},
+    rollback => sub {...},
+  );
+  my $a2 = Activity::Transactional::Activity::CodeRef->new(
+    commit => sub {die;},
+    rollback => sub {...},
+  );
   $transaction->commit();
 
 =head1 METHODS

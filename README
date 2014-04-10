@@ -106,9 +106,9 @@ SUPPORT
     contribute patches, please send me a diff or prod me to pull from your
     repository :)
 
-    <https://github.com/kentfredric/activity-transactional>
+    <https://github.com/jjl/activity-transactional>
 
-      git clone https://github.com/kentfredric/activity-transactional.git
+      git clone https://github.com/jjl/activity-transactional.git
 
 COPYRIGHT AND LICENSE
     This software is Copyright (c) 2014 by James Laver.
