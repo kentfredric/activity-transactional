@@ -1,6 +1,15 @@
 package Activity::Transactional::Transaction;
 $Activity::Transactional::Transaction::VERSION = '0.001000';
+# ABSTRACT: An atomic transaction
+
 our $AUTHORITY = 'cpan:ELPENGUIN'; # AUTHORITY
+
+
+
+
+
+
+
 
 use Moose;
 use Activity::Transactional::Activity;
@@ -27,6 +36,10 @@ sub _iterator {
   Activity::Transactional::Iterator( source => $self->_actions );
 }
 
+
+
+
+
 sub commit {
   my $self = shift;
   my $it   = $self->_iterator;
@@ -42,6 +55,10 @@ sub commit {
   1;
 }
 
+
+
+
+
 sub do_rollback {
   my ( $self, $it ) = @_;
   while ( $it->can_prev ) {
@@ -55,12 +72,20 @@ sub do_rollback {
   }
 }
 
+
+
+
+
 sub rollback {
   my $self = shift;
   my $it   = $self->_iterator;
   $it->end;
   $self->do_rollback($it);
 }
+
+
+
+
 
 sub add_activity {
   my ( $self, $activity ) = @_;
@@ -79,11 +104,26 @@ __END__
 
 =head1 NAME
 
-Activity::Transactional::Transaction
+Activity::Transactional::Transaction - An atomic transaction
 
 =head1 VERSION
 
 version 0.001000
+
+=head1 SYNOPSIS
+
+  my $transaction = thing_that_yields_a_transaction();
+  $transaction->commit();
+
+=head1 METHODS
+
+=head2 C<commit>
+
+=head2 C<do_rollback>
+
+=head2 C<rollback>
+
+=head2 C<add_activity>
 
 =head1 AUTHORS
 
