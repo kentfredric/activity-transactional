@@ -8,7 +8,6 @@ build_requires:
   File::Spec::Functions: '0'
   List::Util: '0'
   Test::More: '0.89'
-  perl: '5.006'
   version: '0'
 configure_requires:
   ExtUtils::MakeMaker: '6.30'

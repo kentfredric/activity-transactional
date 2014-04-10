@@ -21,9 +21,7 @@ t/00-compile/lib_Activity_Transactional_Iterator_pm.t
 t/00-compile/lib_Activity_Transactional_Transaction_pm.t
 t/00-compile/lib_Activity_Transactional_Types_pm.t
 t/00-compile/lib_Activity_Transactional_pm.t
-t/00-load.t
 t/00-report-prereqs.t
-t/manifest.t
 weaver.ini
 xt/author/critic.t
 xt/release/cpan-changes.t

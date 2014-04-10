@@ -5,39 +5,39 @@ our $AUTHORITY = 'cpan:ELPENGUIN'; # AUTHORITY
 use Moose;
 
 has source => (
-  isa => 'ArrayRef[Any]',
-  is => 'ro',
+  isa      => 'ArrayRef[Any]',
+  is       => 'ro',
   required => 1,
-  traits => ['Array'],
-  handles => {
-    'count' => 'count',
+  traits   => ['Array'],
+  handles  => {
+    'count'     => 'count',
     'can_first' => 'count',
-    'can_last' => 'count',
+    'can_last'  => 'count',
   }
 );
 
 has index => (
-  isa => 'Num',
-  is => 'ro',
-  default =>  -1,
+  isa      => 'Num',
+  is       => 'ro',
+  default  => -1,
   required => 0,
-  traits => ['Number'],
-  handles => {
-   'set_index' => 'set',
-   'inc_index' => [ 'add', 1 ],
-   'dec_index' => [ 'sub', 1 ],
+  traits   => ['Number'],
+  handles  => {
+    'set_index' => 'set',
+    'inc_index' => [ 'add', 1 ],
+    'dec_index' => [ 'sub', 1 ],
   },
 );
 
 sub can_next {
-  my $self = shift;
+  my $self  = shift;
   my $count = $self->count - 1;
-  return ($self->count - 1 <= $self->index);
+  return ( $self->count - 1 <= $self->index );
 }
 
 sub can_prev {
   my $self = shift;
-  return ($self->index > 0)
+  return ( $self->index > 0 );
 }
 
 sub next {
@@ -68,7 +68,7 @@ sub last_index {
 
 sub last {
   my $self = shift;
-  $self->set_index($self->last_index);
+  $self->set_index( $self->last_index );
 }
 
 sub can_current {
@@ -78,13 +78,13 @@ sub can_current {
 sub get {
   my $self = shift;
   die("empty") unless $self->can_current;
-  $self->source->[$self->index];
+  $self->source->[ $self->index ];
 }
 
 sub set {
-  my ($self, $value) = @_;
+  my ( $self, $value ) = @_;
   die("empty") unless $self->can_current;
-  $self->source->[$self->index] = $value;
+  $self->source->[ $self->index ] = $value;
 }
 
 __PACKAGE__->meta->make_immutable();

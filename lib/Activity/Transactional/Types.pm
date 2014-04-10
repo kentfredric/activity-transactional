@@ -2,14 +2,12 @@ package Activity::Transactional::Types;
 $Activity::Transactional::Types::VERSION = '0.001000';
 our $AUTHORITY = 'cpan:ELPENGUIN'; # AUTHORITY
 
-use MooseX::Types -declare => [
-  qw(Activity Transaction TransactionList)
-];
+use MooseX::Types -declare => [ qw(Activity Transaction TransactionList) ];
 use MooseX::Types::Moose qw( ArrayRef );
 
-class_type Transaction, {class => 'Activity::Transactional::Transaction'};
-role_type Activity, {role => 'Activity::Transactional::Activity'};
-subtype TransactionList, as ArrayRef[ Transaction ];
+class_type Transaction, { class => 'Activity::Transactional::Transaction' };
+role_type Activity,     { role  => 'Activity::Transactional::Activity' };
+subtype TransactionList, as ArrayRef [Transaction];
 
 __END__
 
