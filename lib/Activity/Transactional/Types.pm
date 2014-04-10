@@ -1,5 +1,7 @@
 package Activity::Transactional::Types;
 
+# ABSTRACT: Types for Activity::Transactional
+
 # AUTHORITY
 
 use strict;
