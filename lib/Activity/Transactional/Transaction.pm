@@ -35,7 +35,7 @@ sub commit {
     } catch {
       warn "Commit failed at index @{[$self->index]}, triggering rollback";
       $self->do_rollback($it);
-    }
+    };
   }
   1;
 }
