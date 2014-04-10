@@ -19,7 +19,7 @@ $bundle->configure;
 
 my @stopwords = (
   qw(
-    Laver
+    Laver JJL Perldoc perldoc
     )
 );
 for my $wordlist (@stopwords) {
@@ -37,6 +37,7 @@ $bundle->remove_policy('Subroutines::ProhibitBuiltinHomonyms');
 $bundle->remove_policy('Subroutines::ProhibitCallsToUnexportedSubs');
 $bundle->remove_policy('Subroutines::ProhibitCallsToUndeclaredSubs');
 $bundle->remove_policy('Subroutines::RequireFinalReturn');
+$bundle->remove_policy('Tics::ProhibitLongLines');
 $bundle->remove_policy('TestingAndDebugging::RequireUseStrict');
 $bundle->remove_policy('TestingAndDebugging::RequireUseWarnings');
 $bundle->remove_policy('ValuesAndExpressions::ProhibitInterpolationOfLiterals');
