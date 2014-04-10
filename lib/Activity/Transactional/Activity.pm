@@ -44,8 +44,6 @@ It's a neat-ish way of dealing with things as part of a larger transaction.
 
 You can perform cleanup etc. in the case that things go wrong.
 
-=cut
-
 =head1 AUTHORS
 
 =over 4
