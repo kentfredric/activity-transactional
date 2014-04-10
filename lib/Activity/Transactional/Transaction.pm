@@ -5,7 +5,7 @@ package Activity::Transactional::Transaction;
 use Moose;
 use Activity::Transactional::Activity;
 use Activity::Transactional::Iterator;
-use Activity::Transactional::Types;
+use Activity::Transactional::Types qw( TransactionList );
 use Try::Tiny;
 
 with 'Activity::Transactional::Activity';
