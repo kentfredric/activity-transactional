@@ -1,7 +1,7 @@
 package Activity::Transactional;
 
 use strict;
-use warnings FATAL => 'all';
+use warnings;
 
 =head1 NAME
 
