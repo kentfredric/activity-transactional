@@ -68,7 +68,7 @@ allow_includes = 1
 
 [CodeLayout::ProhibitIfIfSameLine]
 
-[CodeLayout::ProhibitParensWithBuiltins]
+[-CodeLayout::ProhibitParensWithBuiltins]
 
 [CodeLayout::ProhibitQuotedWordLists]
 
@@ -162,7 +162,7 @@ stop_words = Laver
 
 [-Editor::RequireEmacsFileVariables]
 
-[ErrorHandling::RequireCarping]
+[-ErrorHandling::RequireCarping]
 
 [ErrorHandling::RequireCheckingReturnValueOfEval]
 
@@ -261,7 +261,7 @@ allowed_pragmata = diagnostics feature perlversion strict warnings utf8
 
 [Moose::ProhibitNewMethod]
 
-[Moose::RequireCleanNamespace]
+[-Moose::RequireCleanNamespace]
 
 [Moose::RequireMakeImmutable]
 
@@ -332,7 +332,7 @@ private_name_regex = _(?!build_)\w
 
 [Subroutines::RequireArgUnpacking]
 
-[Subroutines::RequireFinalReturn]
+[-Subroutines::RequireFinalReturn]
 
 [TestingAndDebugging::ProhibitNoStrict]
 
