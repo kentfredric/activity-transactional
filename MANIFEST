@@ -27,6 +27,7 @@ t/boilerplate.t
 t/manifest.t
 t/pod-coverage.t
 t/pod.t
+weaver.ini
 xt/author/critic.t
 xt/release/cpan-changes.t
 xt/release/distmeta.t
