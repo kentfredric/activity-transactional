@@ -24,8 +24,8 @@ has index => (
   traits => ['Number'],
   handles => {
     'set_index' => 'set',
-    'inc_index' => 'inc',
-    'dec_index' => 'dec',
+    'inc_index' => [ 'add', 1 ],
+    'dec_index' => [ 'sub', 1 ],
   },
 );
 
