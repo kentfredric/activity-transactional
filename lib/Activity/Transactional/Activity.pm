@@ -1,5 +1,7 @@
 package Activity::Transactional::Activity;
 $Activity::Transactional::Activity::VERSION = '0.001000';
+# ABSTRACT: Base role for kinds of transactional activities
+
 our $AUTHORITY = 'cpan:ELPENGUIN'; # AUTHORITY
 
 use Moose::Role;
@@ -18,7 +20,7 @@ __END__
 
 =head1 NAME
 
-Activity::Transactional::Activity
+Activity::Transactional::Activity - Base role for kinds of transactional activities
 
 =head1 VERSION
 
