@@ -25,19 +25,21 @@ my @stopwords = (
 for my $wordlist (@stopwords) {
   $bundle->add_or_append_policy_field( 'Documentation::PodSpelling' => ( 'stop_words' => $wordlist ) );
 }
+$bundle->remove_policy('CodeLayout::ProhibitParensWithBuiltins');
 $bundle->remove_policy('CodeLayout::RequireUseUTF8');
-$bundle->remove_policy('Modules::RequirePerlVersion');
 $bundle->remove_policy('Compatibility::PerlMinimumVersionAndWhy');
-$bundle->remove_policy('Subroutines::RequireFinalReturn');
+$bundle->remove_policy('ErrorHandling::RequireCarping');
+$bundle->remove_policy('ErrorHandling::RequireUseOfExceptions');
+$bundle->remove_policy('Modules::RequirePerlVersion');
+$bundle->remove_policy('Moose::RequireCleanNamespace');
+$bundle->remove_policy('NamingConventions::ProhibitAmbiguousNames');
+$bundle->remove_policy('Subroutines::ProhibitBuiltinHomonyms');
+$bundle->remove_policy('Subroutines::ProhibitCallsToUnexportedSubs');
 $bundle->remove_policy('Subroutines::ProhibitCallsToUndeclaredSubs');
+$bundle->remove_policy('Subroutines::RequireFinalReturn');
 $bundle->remove_policy('TestingAndDebugging::RequireUseStrict');
 $bundle->remove_policy('TestingAndDebugging::RequireUseWarnings');
-$bundle->remove_policy('Moose::RequireCleanNamespace');
-$bundle->remove_policy('ErrorHandling::RequireCarping');
-$bundle->remove_policy('CodeLayout::ProhibitParensWithBuiltins');
 $bundle->remove_policy('ValuesAndExpressions::ProhibitInterpolationOfLiterals');
-$bundle->remove_policy('Subroutines::ProhibitBuiltinHomonyms');
-$bundle->remove_policy('ErrorHandling::RequireUseOfExceptions');
 $bundle->remove_policy('Variables::ProhibitUnusedVarsStricter');
 
 #$bundle->remove_policy('NamingConventions::Capitalization');
