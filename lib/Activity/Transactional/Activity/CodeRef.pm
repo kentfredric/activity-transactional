@@ -7,13 +7,13 @@ use Moose;
 with 'Activity::Transactional::Activity';
 
 has commit_code => (
-  isa      => 'CODE',
+  isa      => 'CodeRef',
   is       => 'ro',
   required => 1,
 );
 
 has rollback_code => (
-  isa      => 'CODE',
+  isa      => 'CodeRef',
   is       => 'ro',
   required => 1,
 );
