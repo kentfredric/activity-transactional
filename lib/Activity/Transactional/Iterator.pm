@@ -63,7 +63,7 @@ sub first {
 sub last_index {
   my $self = shift;
   die("empty") unless $self->can_last;
-  return $this->count - 1;
+  return $self->count - 1;
 }
 
 sub last {
