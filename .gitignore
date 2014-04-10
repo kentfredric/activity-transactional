@@ -3,3 +3,5 @@ Makefile.old
 MANIFEST
 MYMETA.json
 MYMETA.yml
+.build
+Activity-Transactional-*
