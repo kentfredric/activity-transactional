@@ -111,6 +111,7 @@ my $static_prereqs = do { my $x = {
                                       'Moose' => '2.100',
                                       'Moose::Role' => '0',
                                       'MooseX::Types' => '0.44',
+                                      'MooseX::Types::Moose' => '0',
                                       'Try::Tiny' => '0.20',
                                       'perl' => '5.006',
                                       'strict' => '0',
