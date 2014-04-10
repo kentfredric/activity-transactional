@@ -3,9 +3,15 @@ $Activity::Transactional::VERSION = '0.001000';
 use strict;
 use warnings;
 
-# ABSTRACT: A module by JJL
+# ABSTRACT: A Transaction-Oriented Programming Workflow Toolkit
 
 our $AUTHORITY = 'cpan:ELPENGUIN'; # AUTHORITY
+
+
+
+
+
+
 
 1;
 
@@ -17,11 +23,15 @@ __END__
 
 =head1 NAME
 
-Activity::Transactional - A module by JJL
+Activity::Transactional - A Transaction-Oriented Programming Workflow Toolkit
 
 =head1 VERSION
 
 version 0.001000
+
+=head1 SYNOPSIS
+
+This code is still under heavy development.
 
 =head1 AUTHORS
 

@@ -1,8 +1,12 @@
 NAME
-    Activity::Transactional - A module by JJL
+    Activity::Transactional - A Transaction-Oriented Programming Workflow
+    Toolkit
 
 VERSION
     version 0.001000
+
+SYNOPSIS
+    This code is still under heavy development.
 
 AUTHORS
     *   James Laver <james.laver@gmail.com>
