@@ -23,6 +23,7 @@ has _actions => (
 );
 
 sub _iterator {
+  my ( $self, ) = @_;
   Activity::Transactional::Iterator(source => $self->_actions);
 }
 
