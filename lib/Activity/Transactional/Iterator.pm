@@ -13,7 +13,7 @@ has source => (
     'count'     => 'count',
     'can_first' => 'count',
     'can_last'  => 'count',
-  }
+  },
 );
 
 has index => (
