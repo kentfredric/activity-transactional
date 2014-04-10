@@ -64,7 +64,8 @@ sub add_activity {
   $self->_push($activity);
 }
 
-__PACKAGE__->meta->make_immutable(1);
+__PACKAGE__->meta->make_immutable();
+1;
 
 __END__
 
