@@ -23,10 +23,7 @@ t/00-compile/lib_Activity_Transactional_Types_pm.t
 t/00-compile/lib_Activity_Transactional_pm.t
 t/00-load.t
 t/00-report-prereqs.t
-t/boilerplate.t
 t/manifest.t
-t/pod-coverage.t
-t/pod.t
 weaver.ini
 xt/author/critic.t
 xt/release/cpan-changes.t
