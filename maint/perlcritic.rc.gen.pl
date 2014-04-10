@@ -27,6 +27,12 @@ for my $wordlist (@stopwords) {
 }
 $bundle->remove_policy('CodeLayout::RequireUseUTF8');
 $bundle->remove_policy('Modules::RequirePerlVersion');
+$bundle->remove_policy('Compatibility::PerlMinimumVersionAndWhy');
+$bundle->remove_policy('Compatibility::RequireFinalReturn');
+$bundle->remove_policy('Subroutines::ProhibitCallsToUndeclaredSubs');
+$bundle->remove_policy('TestingAndDebugging::RequireUseStrict');
+$bundle->remove_policy('TestingAndDebugging::RequireUseWarnings');
+
 #$bundle->remove_policy('ErrorHandling::RequireCarping');
 #$bundle->remove_policy('NamingConventions::Capitalization');
 
