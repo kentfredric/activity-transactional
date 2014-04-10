@@ -15,7 +15,7 @@ has source => (
 );
 
 has index => (
-  isa => 'Num,
+  isa => 'Num',
   is => 'ro',
   default => -1,
   required => 0,
