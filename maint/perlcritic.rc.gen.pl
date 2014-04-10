@@ -19,11 +19,14 @@ $bundle->configure;
 
 my @stopwords = (
   qw(
+    Laver
     )
 );
 for my $wordlist (@stopwords) {
   $bundle->add_or_append_policy_field( 'Documentation::PodSpelling' => ( 'stop_words' => $wordlist ) );
 }
+$bundle->remove_policy('CodeLayout::RequireUseUTF8');
+$bundle->remove_policy('Modules::RequirePerlVersion');
 #$bundle->remove_policy('ErrorHandling::RequireCarping');
 #$bundle->remove_policy('NamingConventions::Capitalization');
 

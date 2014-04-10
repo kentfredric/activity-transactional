@@ -86,7 +86,7 @@ allow_includes = 1
 
 [CodeLayout::RequireTrailingCommas]
 
-[CodeLayout::RequireUseUTF8]
+[-CodeLayout::RequireUseUTF8]
 
 [Compatibility::ConstantLeadingUnderscore]
 
@@ -124,6 +124,7 @@ allow_includes = 1
 
 [Documentation::PodSpelling]
 spell_command = aspell list --lang en_US
+stop_words = Laver
 
 [Documentation::ProhibitAdjacentLinks]
 
@@ -252,7 +253,7 @@ allowed_pragmata = diagnostics feature perlversion strict warnings utf8
 
 [Modules::RequireNoMatchVarsWithUseEnglish]
 
-[Modules::RequirePerlVersion]
+[-Modules::RequirePerlVersion]
 
 [Modules::RequireVersionVar]
 
