@@ -35,6 +35,8 @@ $bundle->remove_policy('TestingAndDebugging::RequireUseWarnings');
 $bundle->remove_policy('Moose::RequireCleanNamespace');
 $bundle->remove_policy('ErrorHandling::RequireCarping');
 $bundle->remove_policy('CodeLayout::ProhibitParensWithBuiltins');
+$bundle->remove_policy('ValuesAndExpressions::ProhibitInterpolationOfLiterals');
+$bundle->remove_policy('Subroutines::ProhibitBuiltinHomonyms');
 
 #$bundle->remove_policy('NamingConventions::Capitalization');
 
