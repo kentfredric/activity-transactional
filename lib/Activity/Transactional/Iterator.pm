@@ -23,7 +23,7 @@ has index => (
   required => 0,
   traits => ['Counter','Number'],
   handles => {
-    'set_index' => 'set'
+    'set_index' => 'set',
     'inc_index' => 'inc',
     'dec_index' => 'dec',
   },
