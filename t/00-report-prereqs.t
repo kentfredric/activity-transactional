@@ -129,6 +129,7 @@ my $static_prereqs = do { my $x = {
                                    'ExtUtils::MakeMaker' => '0',
                                    'File::Spec::Functions' => '0',
                                    'List::Util' => '0',
+                                   'Test::Fatal' => '0',
                                    'Test::More' => '0.89',
                                    'version' => '0'
                                  }

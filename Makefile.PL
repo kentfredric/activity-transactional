@@ -33,12 +33,13 @@ my %WriteMakefileArgs = (
     "ExtUtils::MakeMaker" => 0,
     "File::Spec::Functions" => 0,
     "List::Util" => 0,
+    "Test::Fatal" => 0,
     "Test::More" => "0.89",
     "version" => 0
   },
   "VERSION" => "0.001000",
   "test" => {
-    "TESTS" => "t/*.t t/00-compile/*.t"
+    "TESTS" => "t/*.t t/00-compile/*.t t/01_construct/*.t"
   }
 );
 
@@ -51,6 +52,7 @@ my %FallbackPrereqs = (
   "Moose::Role" => 0,
   "MooseX::Types" => "0.44",
   "MooseX::Types::Moose" => 0,
+  "Test::Fatal" => 0,
   "Test::More" => "0.89",
   "Try::Tiny" => "0.20",
   "strict" => 0,

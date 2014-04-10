@@ -1,27 +1,54 @@
 package Activity::Transactional::Activity::CodeRef;
 $Activity::Transactional::Activity::CodeRef::VERSION = '0.001000';
+# ABSTRACT: A simple CodeRef based Activity.
+
 our $AUTHORITY = 'cpan:ELPENGUIN'; # AUTHORITY
 
 use Moose;
 
+
+
+
+
+
+
+
+
+
 with 'Activity::Transactional::Activity';
 
+
+
+
+
 has commit_code => (
-  isa      => 'CODE',
+  isa      => 'CodeRef',
   is       => 'ro',
   required => 1,
 );
 
+
+
+
+
 has rollback_code => (
-  isa      => 'CODE',
+  isa      => 'CodeRef',
   is       => 'ro',
   required => 1,
 );
+
+
+
+
 
 sub commit {
   my ($self) = @_;
   $self->commit_code->();
 }
+
+
+
+
 
 sub rollback {
   my ($self) = @_;
@@ -40,11 +67,30 @@ __END__
 
 =head1 NAME
 
-Activity::Transactional::Activity::CodeRef
+Activity::Transactional::Activity::CodeRef - A simple CodeRef based Activity.
 
 =head1 VERSION
 
 version 0.001000
+
+=head1 SYNOPSIS
+
+  my $activity = Activity::Transactional::Activity::CodeRef->new(
+    commit_code   => sub {},
+    rollback_code => sub {},
+  );
+
+=head1 METHODS
+
+=head2 C<commit>
+
+=head2 C<rollback>
+
+=head1 ATTRIBUTES
+
+=head2 C<commit_code>
+
+=head2 C<rollback_code>
 
 =head1 AUTHORS
 

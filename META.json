@@ -101,6 +101,7 @@
             "ExtUtils::MakeMaker" : "0",
             "File::Spec::Functions" : "0",
             "List::Util" : "0",
+            "Test::Fatal" : "0",
             "Test::More" : "0.89",
             "version" : "0"
          }
@@ -202,6 +203,7 @@
          "Pod::Coverage::TrustPod" : "0.100003",
          "Test::CPAN::Changes" : "0.27",
          "Test::CPAN::Meta" : "0.23",
+         "Test::Fatal" : "0.013",
          "Test::Kwalitee" : "1.18",
          "Test::More" : "1.001003",
          "Test::Pod" : "1.48",
