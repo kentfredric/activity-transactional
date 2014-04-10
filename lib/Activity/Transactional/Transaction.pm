@@ -5,7 +5,7 @@ our $AUTHORITY = 'cpan:ELPENGUIN'; # AUTHORITY
 use Moose;
 use Activity::Transactional::Activity;
 use Activity::Transactional::Iterator;
-use Activity::Transactional::Types;
+use Activity::Transactional::Types qw( TransactionList );
 use Try::Tiny;
 
 with 'Activity::Transactional::Activity';
