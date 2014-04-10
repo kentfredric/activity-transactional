@@ -1,5 +1,5 @@
 ---
-abstract: 'The great new Activity::Transactional!'
+abstract: 'A module by JJL'
 author:
   - 'James Laver <james.laver@gmail.com>'
 build_requires:

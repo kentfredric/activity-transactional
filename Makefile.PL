@@ -10,7 +10,7 @@ use ExtUtils::MakeMaker 6.30;
 
 
 my %WriteMakefileArgs = (
-  "ABSTRACT" => "The great new Activity::Transactional!",
+  "ABSTRACT" => "A module by JJL",
   "AUTHOR" => "James Laver <james.laver\@gmail.com>",
   "BUILD_REQUIRES" => {},
   "CONFIGURE_REQUIRES" => {
