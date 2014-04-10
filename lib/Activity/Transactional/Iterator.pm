@@ -12,7 +12,7 @@ has source => (
   handles => {
     'count' => 'count',
     'can_first' => 'count',
-    'can_last' => 'count'k
+    'can_last' => 'count',
   }
 );
 
@@ -23,7 +23,7 @@ has index => (
   required => 0,
   traits => ['Counter','Number'],
   handles => {
-    'set_index' => 'set'
+    'set_index' => 'set',
     'inc_index' => 'inc',
     'dec_index' => 'dec',
   },
@@ -63,7 +63,7 @@ sub first {
 sub last_index {
   my $self = shift;
   die("empty") unless $self->can_last;
-  return $this->count - 1;
+  return $self->count - 1;
 }
 
 sub last {
