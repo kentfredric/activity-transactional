@@ -11,8 +11,8 @@ has source => (
   traits => ['Array'],
   handles => {
     'count' => 'count',
-#    'can_first' => 'count',
-#    'can_last' => 'count',
+    'can_first' => 'count',
+    'can_last' => 'count',
   }
 );
 
@@ -23,9 +23,9 @@ has index => (
   required => 0,
   traits => ['Number'],
   handles => {
-    'set_index' => 'set',
-#    'inc_index' => [ 'add', 1 ],
-#    'dec_index' => [ 'sub', 1 ],
+   'set_index' => 'set',
+   'inc_index' => [ 'add', 1 ],
+   'dec_index' => [ 'sub', 1 ],
   },
 );
 
