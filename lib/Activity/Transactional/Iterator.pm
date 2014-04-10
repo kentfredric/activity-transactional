@@ -21,11 +21,11 @@ has index => (
   is => 'ro',
   default => -1,
   required => 0,
-  traits => ['Counter','Number'],
+  traits => ['Number'],
   handles => {
-    'set_index' => 'set',
-    'inc_index' => 'inc',
-    'dec_index' => 'dec',
+   'set_index' => 'set',
+   'inc_index' => [ 'add', 1 ],
+   'dec_index' => [ 'sub', 1 ],
   },
 );
 
