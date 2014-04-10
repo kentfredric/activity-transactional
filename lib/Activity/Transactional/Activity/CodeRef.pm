@@ -19,10 +19,12 @@ has rollback_code => (
 );
 
 sub commit {
+  my ( $self ) = @_;
   $self->commit_code->()
 }
 
 sub rollback_code {
+  my ( $self ) = @_;
   $self->rollback_code->()
 }
 
