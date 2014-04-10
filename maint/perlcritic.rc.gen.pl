@@ -19,7 +19,7 @@ $bundle->configure;
 
 my @stopwords = (
   qw(
-    Laver JJL Perldoc perldoc CodeRef
+    Laver JJL Perldoc perldoc CodeRef ArrayRef
     )
 );
 for my $wordlist (@stopwords) {

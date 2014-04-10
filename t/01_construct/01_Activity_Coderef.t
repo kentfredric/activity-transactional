@@ -12,14 +12,14 @@ use Test::Fatal qw( exception );
 use Activity::Transactional::Activity::CodeRef;
 
 is(
-    exception {
-        my $activity = Activity::Transactional::Activity::CodeRef->new(
-            commit_code   => sub { },
-            rollback_code => sub { },
-        );
-    },
-    undef,
-    'Constructor does not fail'
+  exception {
+    my $activity = Activity::Transactional::Activity::CodeRef->new(
+      commit_code   => sub { },
+      rollback_code => sub { },
+    );
+  },
+  undef,
+  'Constructor does not fail'
 );
 
 done_testing;

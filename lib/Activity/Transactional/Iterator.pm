@@ -1,6 +1,6 @@
 package Activity::Transactional::Iterator;
 $Activity::Transactional::Iterator::VERSION = '0.001000';
-# ABSTRACT: A reversable iterator for an ArrayRef
+# ABSTRACT: A reversible iterator for an ArrayRef
 
 our $AUTHORITY = 'cpan:ELPENGUIN'; # AUTHORITY
 
@@ -160,7 +160,7 @@ __END__
 
 =head1 NAME
 
-Activity::Transactional::Iterator - A reversable iterator for an ArrayRef
+Activity::Transactional::Iterator - A reversible iterator for an ArrayRef
 
 =head1 VERSION
 
