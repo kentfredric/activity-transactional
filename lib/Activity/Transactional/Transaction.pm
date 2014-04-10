@@ -48,7 +48,7 @@ sub do_rollback {
     } catch {
       # This shouldn't happen. Naughty devs
       warn "Rollback failed: $_. Continuing.";
-    }
+    };
   }
 }
 sub rollback {
