@@ -53,20 +53,6 @@ my $static_prereqs = do { my $x = {
                       },
        'develop' => {
                       'requires' => {
-                                      'Dist::Zilla::PluginBundle::Author::KENTNL' => '2.012002',
-                                      'Pod::Coverage::TrustPod' => '0',
-                                      'Test::CPAN::Changes' => '0.19',
-                                      'Test::CPAN::Meta' => '0',
-                                      'Test::Kwalitee' => '1.12',
-                                      'Test::Pod' => '1.41',
-                                      'Test::Pod::Coverage' => '1.08'
-                                    },
-                      'suggests' => {
-                                      'Dist::Zilla::PluginBundle::Author::KENTNL::Lite' => 'v1.3.0'
-                                    }
-                    },
-       'runtime' => {
-                      'requires' => {
                                       'Dist::Zilla::Plugin::Authority' => '1.006',
                                       'Dist::Zilla::Plugin::AutoPrereqs' => '0',
                                       'Dist::Zilla::Plugin::ConfirmRelease' => '0',
@@ -108,6 +94,20 @@ my $static_prereqs = do { my $x = {
                                       'Dist::Zilla::Plugin::TestRelease' => '0',
                                       'Dist::Zilla::Plugin::Twitter' => '0',
                                       'Dist::Zilla::Plugin::UploadToCPAN' => '0',
+                                      'Dist::Zilla::PluginBundle::Author::KENTNL' => '2.012002',
+                                      'Pod::Coverage::TrustPod' => '0',
+                                      'Test::CPAN::Changes' => '0.19',
+                                      'Test::CPAN::Meta' => '0',
+                                      'Test::Kwalitee' => '1.12',
+                                      'Test::Pod' => '1.41',
+                                      'Test::Pod::Coverage' => '1.08'
+                                    },
+                      'suggests' => {
+                                      'Dist::Zilla::PluginBundle::Author::KENTNL::Lite' => 'v1.3.0'
+                                    }
+                    },
+       'runtime' => {
+                      'requires' => {
                                       'Moose' => '2.100',
                                       'Moose::Role' => '0',
                                       'MooseX::Types' => '0.44',
