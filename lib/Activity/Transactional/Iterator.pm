@@ -87,7 +87,7 @@ sub set {
   $self->source->[$self->index] = $value;
 }
 
-__PACKAGE__->meta->make_immutable(1);
+#__PACKAGE__->meta->make_immutable(1);
 
 __END__
 
