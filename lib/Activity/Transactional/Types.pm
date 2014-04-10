@@ -5,7 +5,7 @@ our $AUTHORITY = 'cpan:ELPENGUIN'; # AUTHORITY
 use strict;
 use warnings;
 
-use MooseX::Types -declare => [ qw(Activity Transaction TransactionList) ];
+use MooseX::Types -declare => [qw(Activity Transaction TransactionList)];
 use MooseX::Types::Moose qw( ArrayRef );
 
 class_type Transaction, { class => 'Activity::Transactional::Transaction' };

@@ -34,12 +34,12 @@ $bundle->remove_policy('Modules::RequirePerlVersion');
 $bundle->remove_policy('Moose::RequireCleanNamespace');
 $bundle->remove_policy('NamingConventions::ProhibitAmbiguousNames');
 $bundle->remove_policy('Subroutines::ProhibitBuiltinHomonyms');
-$bundle->remove_policy('Subroutines::ProhibitCallsToUnexportedSubs');
 $bundle->remove_policy('Subroutines::ProhibitCallsToUndeclaredSubs');
+$bundle->remove_policy('Subroutines::ProhibitCallsToUnexportedSubs');
 $bundle->remove_policy('Subroutines::RequireFinalReturn');
-$bundle->remove_policy('Tics::ProhibitLongLines');
 $bundle->remove_policy('TestingAndDebugging::RequireUseStrict');
 $bundle->remove_policy('TestingAndDebugging::RequireUseWarnings');
+$bundle->remove_policy('Tics::ProhibitLongLines');
 $bundle->remove_policy('ValuesAndExpressions::ProhibitInterpolationOfLiterals');
 $bundle->remove_policy('Variables::ProhibitUnusedVarsStricter');
 
