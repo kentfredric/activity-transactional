@@ -28,5 +28,7 @@ sub rollback_code {
   $self->rollback_code->()
 }
 
-__PACKAGE__->meta->make_immutable(1);
+__PACKAGE__->meta->make_immutable();
+
+1;
 __END__
