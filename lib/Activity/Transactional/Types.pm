@@ -1,5 +1,7 @@
 package Activity::Transactional::Types;
 $Activity::Transactional::Types::VERSION = '0.001000';
+# ABSTRACT: Types for Activity::Transactional
+
 our $AUTHORITY = 'cpan:ELPENGUIN'; # AUTHORITY
 
 use strict;
@@ -22,7 +24,7 @@ __END__
 
 =head1 NAME
 
-Activity::Transactional::Types
+Activity::Transactional::Types - Types for Activity::Transactional
 
 =head1 VERSION
 
