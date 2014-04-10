@@ -23,9 +23,19 @@ Activity::Transactional - A module by JJL
 
 version 0.001000
 
-=head1 AUTHOR
+=head1 AUTHORS
+
+=over 4
+
+=item *
 
 James Laver <james.laver@gmail.com>
+
+=item *
+
+Kent Fredric <kentnl@cpan.org>
+
+=back
 
 =for :stopwords cpan testmatrix url annocpan anno bugtracker rt cpants kwalitee diff irc mailto metadata placeholders metacpan
 

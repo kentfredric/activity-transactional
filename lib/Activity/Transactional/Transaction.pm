@@ -80,9 +80,19 @@ Activity::Transactional::Transaction
 
 version 0.001000
 
-=head1 AUTHOR
+=head1 AUTHORS
+
+=over 4
+
+=item *
 
 James Laver <james.laver@gmail.com>
+
+=item *
+
+Kent Fredric <kentnl@cpan.org>
+
+=back
 
 =head1 COPYRIGHT AND LICENSE
 

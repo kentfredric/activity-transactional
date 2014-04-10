@@ -11,7 +11,7 @@ use ExtUtils::MakeMaker 6.30;
 
 my %WriteMakefileArgs = (
   "ABSTRACT" => "A module by JJL",
-  "AUTHOR" => "James Laver <james.laver\@gmail.com>",
+  "AUTHOR" => "James Laver <james.laver\@gmail.com>, Kent Fredric <kentnl\@cpan.org>",
   "BUILD_REQUIRES" => {},
   "CONFIGURE_REQUIRES" => {
     "ExtUtils::MakeMaker" => "6.30"

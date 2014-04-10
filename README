@@ -4,8 +4,10 @@ NAME
 VERSION
     version 0.001000
 
-AUTHOR
-    James Laver <james.laver@gmail.com>
+AUTHORS
+    *   James Laver <james.laver@gmail.com>
+
+    *   Kent Fredric <kentnl@cpan.org>
 
 SUPPORT
   Perldoc

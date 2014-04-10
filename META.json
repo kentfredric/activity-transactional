@@ -1,7 +1,8 @@
 {
    "abstract" : "A module by JJL",
    "author" : [
-      "James Laver <james.laver@gmail.com>"
+      "James Laver <james.laver@gmail.com>",
+      "Kent Fredric <kentnl@cpan.org>"
    ],
    "dynamic_config" : 0,
    "generated_by" : "Dist::Zilla version 5.015, CPAN::Meta::Converter version 2.140640",
